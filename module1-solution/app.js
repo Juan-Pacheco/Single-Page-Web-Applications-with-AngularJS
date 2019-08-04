@@ -32,8 +32,8 @@ function LunchCheckController($scope){
   };
 
   function calcMessSize(string){
-    return string.split(',').filter(word => word.length != 0);
-  }
+    return string.split(',').filter(word => word.trim() != '').length;
+  };
 
 }
 
